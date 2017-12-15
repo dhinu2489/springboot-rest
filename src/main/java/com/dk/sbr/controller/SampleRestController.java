@@ -26,7 +26,7 @@ public class SampleRestController {
 
     @RequestMapping("/post")
     public Object postRequest(@RequestBody Object body){
-        LOGGER.debug("Payload..."+body.toString());
+        LOGGER.debug("Payload... {}",body.toString());
         return body;
     }
 
